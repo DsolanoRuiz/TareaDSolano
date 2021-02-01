@@ -8,8 +8,6 @@
        </head>
     <body>
         <div class="container">
-            <%@include file="WEB-INF/vista/cabecera.jspf"%>
-            <%@include file="WEB-INF/vista/navegacion.jspf"%>
                 <div class="row">
                 <div class="col">
                     <h1>Introducir Datos de Acceso</h1>

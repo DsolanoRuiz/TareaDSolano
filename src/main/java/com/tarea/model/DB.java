@@ -1,7 +1,7 @@
 
 package com.tarea.model;
 
-import com.tarea.exception.DBException;
+import com.tarea.exception.TareaException;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -95,9 +95,9 @@ public class DB {
         tareas.get(id).setEstado(Estado.To_Do);
     }
 
-    public synchronized static void AltaTarea(Tarea tareas) throws DBException {
+    public synchronized static void AltaTarea(Tarea tareas) throws TareaException {
         if (tareas.containsKey(tareas.getId())) {
-            throw new DBException("No existe tarea con este ID" + tareas.getId());
+            throw new TareaException("No existe tarea con este ID" + tareas.getId());
         } else {
             tareas.put(tareas.getId(), tareas);
         }
@@ -112,10 +112,10 @@ public class DB {
         return usuarios;
     }
 
-    public synchronized static void AltaUsuario(Usuario u) throws DBException {
+    public synchronized static void AltaUsuario(Usuario u) throws TareaException {
         boolean Agregar = usuarios.add(u);
         if (!Agregar) {
-            throw new DBException("No se pudo agregar porque el usuario no existe");
+            throw new TareaException("No se pudo agregar porque el usuario no existe");
         }
 
     }

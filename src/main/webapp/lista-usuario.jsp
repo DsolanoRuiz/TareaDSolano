@@ -11,8 +11,6 @@
         </><%@include file="WEB-INF/vista/estilo.jspf" %>
     </head>
     <body>
-        </><%@include file="WEB-INF/vista/cabecera.jspf" %>
-        </><%@include file="WEB-INF/vista/navegacion.jspf" %>
         <h1>Lista Usuarios</h1>
 
         <%Collection<Usuario>usuarios=DB.getUsuario();

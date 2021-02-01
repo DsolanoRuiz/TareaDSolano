@@ -12,7 +12,6 @@
         <%@include file="WEB-INF/vista/estilo.jspf" %>
        </head>
     <body>
-        <%@include file="WEB-INF/vista/cabecera.jspf" %>
         <div class="container">
             <h1>Lista Tarea ${sessionScope.usuario.nombreUsuario}</h1> 
             <br>

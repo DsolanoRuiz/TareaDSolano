@@ -1,31 +1,42 @@
 
 <%@ page pageEncoding="UTF-8" %>
- <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
- 
- 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 
 <style>
-    h1 {
-        color: gray;
+    #top a:link:hover, #top a:visited:hover  {
+        position: relative;
+        background-color: #036fab;
+        color:gray;
+        font-weight : bold;
+        text-decoration : underline;
         text-shadow: 2px 2px 4px #000000;
         text-align: center;
+        padding: 5px;
+        margin: 0px 0px 10px 0px;
     }
-    div {
-  width: 600px;
-  height: 100px;
-  padding: 15px;
-  font-size: 12px;
-  text-align: justify-all;
-  text-decoration: none;
-  }
+        
+    #left {
+        float: left;
+        background-color: #dddddd;
+        padding: 5px;
+        width: 170px;
+        box-shadow: 0 9px #999;
+    }
+    #right {
+        float: right;
+        background-color: #ece3a5;
+        padding: 5px;
+        width: 150px;
+        margin: 0px 170px 0px 170px;
+    }
       #border img { 
         border: 10px solid transparent;
         padding: 15px;
-        border-image: url(border.png) 30 round;
         box-shadow: 0 9px #999;
         hover {background-color: #3e8e41}
     }
@@ -35,11 +46,8 @@
         font-size: 15px;
         cursor: pointer;
         text-align: center;
-        text-decoration: none;
-        outline: none;
         color:#1E90FF;
         background-color: #4CAF50;
-        border: none;
         border-radius: 10px;
         box-shadow: 0 9px #999;
         transform: translateY(4px);
@@ -61,5 +69,5 @@
         a.one:visited {color:#0000ff;}
         a.one:hover {color:#ffcc00;}
     }
-    
+
 </style> 

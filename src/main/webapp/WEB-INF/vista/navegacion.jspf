@@ -1,13 +1,23 @@
 <%@ page pageEncoding="UTF-8" %>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
 
-<div class="row">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />    
+  <div>
+      <div id="left">
+          <ui:insert name="left">Left</ui:insert>
+    <div class="row">
     <div class="col-12">
         <ul class="nav">
             <li class="nav-item">
                 <a class="nav-link active" href="index.jsp">Inicio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="lista-tarea.jsp">Lista Tarea</a>
+                <a class="nav-link" href="lista-tarea.jsp">Lista Tareas</a>
+            </li>
+             <li class="nav-item">
+                <a class="nav-link" href="lista-usuario.jsp">Lista Usuarios</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="form-alta-tarea.jsp">Registro Tarea </a>
@@ -18,3 +28,4 @@
         </ul>
     </div>
 </div>
+          </div>
